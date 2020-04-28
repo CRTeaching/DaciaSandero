@@ -1,0 +1,18 @@
+some info - documentation
+https://medium.com/swlh/object-detection-and-instance-segmentation-a-detailed-overview-94ca109274f2 Instance segmentation
+https://www.pyimagesearch.com/2018/11/26/instance-segmentation-with-opencv/ Opencv instance segmentation
+https://www.kdnuggets.com/2018/09/object-detection-image-classification-yolo.html Basic image classification
+https://pjreddie.com/darknet/yolo/ Yolo darknet intro
+
+
+https://towardsdatascience.com/object-detection-and-tracking-in-pytorch-b3cf1a696a98 Pytorch object detection
+https://www.edureka.co/blog/tensorflow-object-detection-tutorial/ Tensorflow object detection
+https://machinelearningmastery.com/how-to-perform-object-detection-with-yolov3-in-keras/ Yolo v3 keras object detection
+
+
+https://github.com/xtiandr97/ObjectDetectionFromImageGUI Object detection GUI git
+https://github.com/KerasKorea/KerasObjectDetector Object detection with keras
+
+
+
+http://cocodataset.org/#download Coco dataset
