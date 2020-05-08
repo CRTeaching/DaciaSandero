@@ -12,7 +12,12 @@ https://machinelearningmastery.com/how-to-perform-object-detection-with-yolov3-i
 
 https://github.com/xtiandr97/ObjectDetectionFromImageGUI Object detection GUI git
 https://github.com/KerasKorea/KerasObjectDetector Object detection with keras
-
+https://www.tensorflow.org/tutorials/keras/save_and_load#installs_and_imports
 
 
 http://cocodataset.org/#download Coco dataset
+https://www.kaggle.com/aalborguniversity/brackish-dataset
+https://anaconda.org/anaconda/ffmpeg
+
+https://github.com/kkroening/ffmpeg-python
+https://github.com/fabienbaradel/Frames_Extractor
