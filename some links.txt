@@ -21,3 +21,5 @@ https://anaconda.org/anaconda/ffmpeg
 
 https://github.com/kkroening/ffmpeg-python
 https://github.com/fabienbaradel/Frames_Extractor
+
+https://github.com/virajmavani/object-detection/blob/master/main.py/ Gui for object detection
