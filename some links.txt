@@ -23,3 +23,5 @@ https://github.com/kkroening/ffmpeg-python
 https://github.com/fabienbaradel/Frames_Extractor
 
 https://github.com/virajmavani/object-detection/blob/master/main.py/ Gui for object detection
+
+https://www.pyimagesearch.com/2016/05/23/opencv-with-tkinter/ GUI for image detection
