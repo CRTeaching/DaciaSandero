@@ -26,4 +26,4 @@ https://github.com/virajmavani/object-detection/blob/master/main.py/ Gui for obj
 
 https://www.pyimagesearch.com/2016/05/23/opencv-with-tkinter/ GUI for image detection
 
-https://machinelearningmastery.com/how-to-perform-object-detection-with-yolov3-in-keras/ using keras to perform object detection
+
