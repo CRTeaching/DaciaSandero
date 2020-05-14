@@ -3,6 +3,8 @@ https://medium.com/swlh/object-detection-and-instance-segmentation-a-detailed-ov
 https://www.pyimagesearch.com/2018/11/26/instance-segmentation-with-opencv/ Opencv instance segmentation
 https://www.kdnuggets.com/2018/09/object-detection-image-classification-yolo.html Basic image classification
 https://pjreddie.com/darknet/yolo/ Yolo darknet intro
+https://datascience.stackexchange.com/questions/19099/what-is-weight-and-bias-in-deep-learning
+https://dzone.com/articles/understanding-object-detection-using-yolo
 
 
 https://towardsdatascience.com/object-detection-and-tracking-in-pytorch-b3cf1a696a98 Pytorch object detection
