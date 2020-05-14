@@ -23,3 +23,13 @@ https://anaconda.org/anaconda/ffmpeg
 
 https://github.com/kkroening/ffmpeg-python
 https://github.com/fabienbaradel/Frames_Extractor
+
+https://github.com/virajmavani/object-detection/blob/master/main.py/ Gui for object detection
+
+https://www.pyimagesearch.com/2016/05/23/opencv-with-tkinter/ GUI for image detection
+
+https://stackabuse.com/object-detection-with-imageai-in-python/ Object detection using imageAi
+
+https://www.pyimagesearch.com/2018/11/12/yolo-object-detection-with-opencv/ Object detection
+
+https://github.com/PySimpleGUI/PySimpleGUI-YOLO/blob/master/yolo.py Using pysimple to object detection
