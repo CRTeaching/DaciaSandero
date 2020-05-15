@@ -1,24 +1,40 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri May 15 22:02:31 2020
+
+@author: USER
+"""
+
 from tkinter import *
 from PIL import ImageTk,Image
 from tkinter.filedialog import askopenfilename
+import os
+
+root = Tk(className=' Object Detection')
 
 def OpenFile():
-    name = askopenfilename(filetypes =(("All Files","*.*"),
+    name = askopenfilename(initialdir=os.getcwd(),
+                           filetypes =(("All Files","*.*"),
                                        ("Portable Network Graphics File", "*.png"),
                                        ("Portable Network Graphics File", "*.png"),
                                        ("JPEG File", "*.jpg"),
                                        ("Graphic Interchange Format File", "*.gif")),
                            title = "Choose a file.")
-    dir_loc.set(name)
-    images = Image.open(name)
-    hpercent = (baseheight / float(images.size[1]))
-    wsize = int((float(images.size[0]) * float(hpercent)))
-    images = images.resize((wsize, baseheight), Image.ANTIALIAS)
-    root.img = ImageTk.PhotoImage(images)
-    lb_img.configure(image=root.img)
-    lb_img.update()
-   
-root = Tk(className=' Object Detection')
+    if not name:
+        return
+     # setup new window
+    new_window = Toplevel(root)
+    im = Image.open(name)
+    # load image
+    tkimage = ImageTk.PhotoImage(im)
+    myvar=Label(new_window,image = tkimage)
+    myvar.image = tkimage
+    myvar.pack()
+
+
+
+
+
 root.geometry("300x50")
 btn = Button(root, text="Select an image", command=OpenFile)
 btn.pack(side="bottom", fill="both", expand="yes", padx="10", pady="10")
