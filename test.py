@@ -430,6 +430,7 @@ def _main_(args):
 
     im = Image.open(name)
     # load image
+    im = im.resize((250, 250), Image.ANTIALIAS) ## The (250, 250) is (height, width)
     tkimage = ImageTk.PhotoImage(im)
     myvar=Label(new_window,image = tkimage)
     myvar.image = tkimage
@@ -440,7 +441,7 @@ def _main_(args):
     root.mainloop()    
     # run the prediction
     yolos = yolov3.predict(tkimage)
-    boxes = []
+    boxes = list()
 
     for i in range(len(yolos)):
         # decode the output of the network
@@ -448,13 +449,16 @@ def _main_(args):
 
     # correct the sizes of the bounding boxes
     correct_yolo_boxes(boxes, image_h, image_w, net_h, net_w)
-
+    
     # suppress non-maximal boxes
     do_nms(boxes, nms_thresh)     
-
+    # get the details of the detected objects
+    v_boxes, v_labels, v_scores = get_boxes(boxes, labels, obj_thresh)
+    # summarize what we found
+    for i in range(len(v_boxes)):
+        nt(v_labels[i], v_scores[i])
     # draw bounding boxes on the image using labels
     draw_boxes(tkimage, boxes, labels, obj_thresh) 
- 
     # write the image with bounding boxes to file
     cv2.imwrite(image_path[:-4] + '_detected' + image_path[-4:], (image).astype('uint8')) 
 
