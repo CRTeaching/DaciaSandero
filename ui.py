@@ -31,6 +31,7 @@ def OpenFile():
      # setup new window for
     new_window = Toplevel(root)
     im = Image.open(name)
+    im = im.resize((250, 250), Image.ANTIALIAS) ## The (250, 250) is (height, width)
     # load image
     tkimage = ImageTk.PhotoImage(im)
     myvar=Label(new_window,image = tkimage)
