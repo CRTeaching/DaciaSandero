@@ -33,3 +33,5 @@ https://stackabuse.com/object-detection-with-imageai-in-python/ Object detection
 https://www.pyimagesearch.com/2018/11/12/yolo-object-detection-with-opencv/ Object detection
 
 https://github.com/PySimpleGUI/PySimpleGUI-YOLO/blob/master/yolo.py Using pysimple to object detection
+
+https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10 Train in tensorflow
