@@ -22,7 +22,7 @@ def OpenFile():
                            title = "Choose a file.")
     if not name:
         return
-     # setup new window
+     # setup new window for
     new_window = Toplevel(root)
     im = Image.open(name)
     # load image
