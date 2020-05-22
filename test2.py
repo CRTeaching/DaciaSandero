@@ -29,39 +29,10 @@ argparser.add_argument(
 
 
 
-def select_image():
-	# grab a reference to the image panels
-	global panelA
-	# open a file chooser dialog and allow the user to select an input
-	# image
-	path = askopenfilename()
-	if len(path) > 0:
-		# load the image from disk, convert it to grayscale, and detect
-		# edges in it
-		image = cv2.imread(path)
-       
-		# OpenCV represents images in BGR order; however PIL represents
-		# images in RGB order, so we need to swap the channels
-		image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-		# convert the images to PIL format...
-		image = Image.fromarray(image)
         
-		# ...and then to ImageTk format
-        # with resize the image
-		image = ImageTk.PhotoImage(image.resize((400,450)))
-	# if the panels are None, initialize them
-		if panelA is None:
-			# the first panel will store our original image
-			panelA = Label(image=image)
-			panelA.image = image
-			panelA.pack(side="left", padx=10, pady=10)
-		# otherwise, update the image panels
-		else:
-			# update the pannels
-			panelA.configure(image=image)
-			panelA.image = image
+        
+        
      
-    
 class WeightReader:
     def __init__(self, weight_file):
         with open(weight_file, 'rb') as w_f:
@@ -448,18 +419,17 @@ def _main_(args):
     new_image = preprocess_input(image, net_h, net_w)
     # initialize the window toolkit along with the two image panels
     root = Tk()
-    panelA = None
-    # create a button, then when pressed, will trigger a file chooser
-    # dialog and allow the user to select an input image; then add the
-    # button the GUI
-    btn = Button(root, text="Select an image", command=select_image)
-    btn.pack(side="bottom", fill="both", expand="yes", padx="10", pady="10")
+    #put file path to the image
+    test1=os.chdir('C/User/Python')
+    i = ImageOpen("cat.png")
+    root.img = ImageTK.PhotoImage(i)
+    
     # kick off the GUI
     root.mainloop()
     
    
     # run the prediction
-    yolos = yolov3.predict(panelA)
+    yolos = yolov3.predict(i)
     boxes = list()
 
     for i in range(len(yolos)):
@@ -471,13 +441,8 @@ def _main_(args):
     
     # suppress non-maximal boxes
     do_nms(boxes, nms_thresh)     
-    # get the details of the detected objects
-    v_boxes, v_labels, v_scores = get_boxes(boxes, labels, obj_thresh)
-    # summarize what we found
-    for i in range(len(v_boxes)):
-        nt(v_labels[i], v_scores[i])
     # draw bounding boxes on the image using labels
-    draw_boxes(panelA, boxes, labels, obj_thresh) 
+    draw_boxes(i, boxes, labels, obj_thresh) 
     # write the image with bounding boxes to file
     cv2.imwrite(image_path[:-4] + '_detected' + image_path[-4:], (image).astype('uint8')) 
 
