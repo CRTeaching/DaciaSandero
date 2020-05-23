@@ -23,4 +23,6 @@ To use API, please install below package using below command in anaconda prompt
 
 ```pip install opencv-python```
 
-
+## Settings:
+Run this in a terminal to load the weight 
+```python yolo.py --weights yolov3.weights```
