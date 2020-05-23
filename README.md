@@ -1,8 +1,9 @@
 # DaciaSandero
 
 ## Requirements: 
-*Tkinter
-*Keras
+*Python 3
+*Numpy
+*Python 3 tkinter
 *OpenCV
 *TensorFlow
  
