@@ -2,9 +2,13 @@
 
 ## Requirements: 
 *Python 3
+
 *Numpy
+
 *Python 3 tkinter
+
 *OpenCV
+
 *TensorFlow
  
 To use GUI, please install the package using below command in anaconda prompt 
