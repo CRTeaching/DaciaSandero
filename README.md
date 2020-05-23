@@ -1,9 +1,13 @@
 # DaciaSandero
 In this project,we are using 
- -Tkinter
- -Keras
- -OpenCV
- -TensorFlow
+ 
+ Tkinter
+ 
+ Keras
+ 
+ OpenCV
+ 
+ TensorFlow
  
 To use GUI, please install the package using below command in anaconda prompt 
 
