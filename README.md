@@ -18,4 +18,4 @@ pip install keras
 
 pip install opencv-python
 
-While execute ui.py
+
