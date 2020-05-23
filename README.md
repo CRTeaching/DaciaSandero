@@ -29,3 +29,4 @@ Run this in a terminal to load the weight
 ```python yolo.py --weights yolov3.weights```
 
 ## GUI:
+![The Build](./ui.PNG?raw=true)
