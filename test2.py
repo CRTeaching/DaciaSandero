@@ -27,9 +27,26 @@ argparser.add_argument(
     '--image',
     help='path to image')
 
-
-
-        
+#Function to open file and select
+def OpenFile():
+    name = askopenfilename(initialdir=os.getcwd(),
+                           filetypes =(("All Files","*.*"),
+                                       ("Portable Network Graphics File", "*.png"),
+                                       ("Portable Network Graphics File", "*.png"),
+                                       ("JPEG File", "*.jpg"),
+                                       ("Graphic Interchange Format File", "*.gif")),
+                           title = "Choose a file.")
+    if not name:
+        return
+     # setup new window for
+    new_window = Toplevel(root)
+    im = Image.open(os.getcwd(name))
+    im = im.resize((250, 250), Image.ANTIALIAS) ## The (250, 250) is (height, width)
+    # load image
+    tkimage = ImageTk.PhotoImage(im)
+    myvar=Label(new_window,image = tkimage)
+    myvar.image = tkimage
+    myvar.pack()    
         
         
      
@@ -417,13 +434,18 @@ def _main_(args):
     image = cv2.imread(image_path)
     image_h, image_w, _ = image.shape
     new_image = preprocess_input(image, net_h, net_w)
-    # initialize the window toolkit along with the two image panels
-    root = Tk()
-    #put file path to the image
-    test1=os.chdir('C/User/Python')
-    i = ImageOpen("cat.png")
-    root.img = ImageTK.PhotoImage(i)
     
+    # Show the GUI
+    root = Tk()
+    #Set path
+    path = "User/Python"
+    #change the directory
+    test1=os.chdir(path)
+    #change the image name and use path join to the directory
+    i = ImageOpen(os.path.join(test1,"cat.jfif"))
+    root.img = ImageTK.PhotoImage(i)
+    btn = Button(root, text="Select an image", command=OpenFile)
+    btn.pack(side="bottom", fill="both", expand="yes", padx="10", pady="10")
     # kick off the GUI
     root.mainloop()
     
