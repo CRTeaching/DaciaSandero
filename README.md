@@ -30,6 +30,7 @@ Run this in a terminal to load the weight and change the image source to your so
 
 ## GUI:
 This show the GUI using ui.py
+
 ![The Build](./ui.PNG?raw=true)
 
 ## Noted:
