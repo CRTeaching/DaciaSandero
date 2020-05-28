@@ -1,6 +1,6 @@
 # DaciaSandero
 
-### detection file without GUI
+### Detection file without using GUI
 
 ## Requirements:
 
@@ -17,10 +17,15 @@
 *any python IDE (tested on Anaconda)
 
 ##Installation
+
 Prerequisites:
+
 ```pip install matplotlib```
+
 ```pip install numpy```
+
 ```pip install opencv-python```
+
 ```pip install keras```
 
 
