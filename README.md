@@ -43,6 +43,49 @@ Please note this does not work with fish due to training problems and such the c
 
 ### Dataset
 
+## Requirements:
+
+*ffmpeg package
+
+*Notepad++
+
+## Installation:
+
+Clone or download files at https://www.kaggle.com/aalborguniversity/brackish-dataset
+
+```conda install -c anaconda ffmpeg```
+
+## Separation of video files into frames
+
+- Move frameExtractor.py to root directory
+
+- Open Anaconda command prompt and change working directory to the root of the dataset one
+
+- python frameExtractor.py --inputFolder [insert path to the folder containing videos]
+
+## For use on Darknet
+
+- Move all images and COCO annotations into one directory
+
+- Move createDummyYOLOAnnotations.py to root directory
+
+- Open Anaconda command prompt and change working directory to the root of the dataset one
+
+- python createDummyYOLOAnnotations.py --inputFolder [insert path to the folder containing videos]
+
+## Modifying train.txt file to include file paths
+
+- Open file using Notepad++ (other file editors might work as well)
+
+- In the search option, select Replace
+
+- Tick regular expression at the bottom of the page
+
+- In the Find What box, write the power symbol "^"
+
+- In the Replace with box, put in the path relative from the darknet file to the image file
+
+- Click replace all
 
 ### API & GUI
 ## Requirements: 
