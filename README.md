@@ -16,7 +16,7 @@
 
 *any python IDE (tested on Anaconda)
 
-##Installation
+## Installation
 
 Prerequisites:
 
