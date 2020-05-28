@@ -3,11 +3,17 @@
 ### detection file without GUI
 
 ## Requirements:
+
 *Python 3
+
 *Matplotlib
+
 *OpenCV2
+
 *Keras
+
 *Numpy
+
 *any python IDE (tested on Anaconda)
 
 ##Installation
