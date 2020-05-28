@@ -119,7 +119,7 @@ Run this in a terminal to load the weight and change the image source to your so
 ## GUI:
 This show the GUI using ui.py
 
-![The Build](./ui.PNG?raw=true)
+![The Build](./API_GUI/ui.PNG?raw=true)
 
 ## Noted:
 For test2.py,it is the implement of GUI.So you can use command to load weights and please change the source of image and path 
