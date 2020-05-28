@@ -1,6 +1,6 @@
 # DaciaSandero
 
-### detection file without GUI
+### Detection file without using GUI
 
 ## Requirements:
 
