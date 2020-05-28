@@ -43,9 +43,14 @@ To use API, please install below package using below command in anaconda prompt
 ```pip install opencv-python```
 
 ## Settings:
-Run this in a terminal to load the weight 
+Run this in a terminal to load the weight and change the image source to your source 
 
-```python yolo.py --weights yolov3.weights```
+```python yolo.py --weights yolov3.weights --image IMG_whatever.jpg```
 
 ## GUI:
+This show the GUI using ui.py
+
 ![The Build](./ui.PNG?raw=true)
+
+## Noted:
+For test2.py,it is the implement of GUI.So you can use command to load weights and please change the source of image and path 

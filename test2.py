@@ -442,6 +442,7 @@ def _main_(args):
     #change the directory
     test1=os.chdir(path)
     #change the image name and use path join to the directory
+    #try on using i = ImageOpen(new_image) not sure work or not but u can try yolo.py without gui.
     i = ImageOpen(os.path.join(test1,"cat.jfif"))
     root.img = ImageTK.PhotoImage(i)
     btn = Button(root, text="Select an image", command=OpenFile)
