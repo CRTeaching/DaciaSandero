@@ -1,5 +1,24 @@
 # DaciaSandero
 
+### detection file without GUI
+
+## Requirements:
+*Python 3
+*Matplotlib
+*OpenCV2
+*Keras
+*Numpy
+*any python IDE (tested on Anaconda)
+
+##Installation
+Prerequisites:
+```pip install matplotlib```
+```pip install numpy```
+```pip install opencv-python```
+```pip install keras```
+
+
+### API & GUI
 ## Requirements: 
 *Python 3
 
